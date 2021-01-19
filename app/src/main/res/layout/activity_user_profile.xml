@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/umn_maroon"
+    tools:context=".users.profile.UserProfile">
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/userinformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@color/umn_gold">
+
+            <TextView
+                android:id="@+id/userid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="@string/userid"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/actualuserid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userid"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="9dp"
+                android:gravity="center"
+                android:text="@string/actual_user_id"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                />
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="9dp"
+                android:cropToPadding="false"
+                android:scaleType="centerInside"
+                android:src="@mipmap/avatar_female"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/userpreferences"
+            android:layout_width="match_parent"
+            android:layout_height="532dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@color/umn_maroon"
+            >
+
+            <TextView
+                android:id="@+id/preference_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/preference"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/max_preference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/preference_textview"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/preference_maxallow"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                />
+
+
+
+            <RelativeLayout
+                android:id="@+id/preference_optionsbox"
+                android:layout_below="@id/max_preference"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                >
+
+
+                <ToggleButton
+                    android:id="@+id/toggleButton_lighting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:textOn="good lighting"
+                    android:textOff="good lighting"
+                    android:textColor="@color/white"
+                    android:background="@drawable/togglebutton_selector"
+                    android:padding="2dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton_quiet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_toRightOf="@id/toggleButton_lighting"
+                    android:background="@drawable/togglebutton_selector"
+                    android:checked="false"
+                    android:padding="2dp"
+                    android:textColor="@color/white"
+                    android:textOff="quiet"
+                    android:textOn="quiet" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton_outlets"
+                    android:layout_toRightOf="@id/toggleButton_quiet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:textOn="outlets"
+                    android:textOff="outlets"
+                    android:textColor="@color/white"
+                    android:background="@drawable/togglebutton_selector"
+                    android:padding="2dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton_studyaids"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toggleButton_lighting"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/togglebutton_selector"
+                    android:checked="false"
+                    android:padding="2dp"
+                    android:textColor="@color/white"
+                    android:textOff="study aids"
+                    android:textOn="study aids" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton_food"
+                    android:layout_toRightOf="@id/toggleButton_studyaids"
+                    android:layout_below="@id/toggleButton_quiet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:textOn="food"
+                    android:textOff="food"
+                    android:textColor="@color/white"
+                    android:background="@drawable/togglebutton_selector"
+                    android:padding="12dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton_coffee"
+                    android:layout_toRightOf="@id/toggleButton_food"
+                    android:layout_below="@id/toggleButton_quiet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:textOn="coffee"
+                    android:textOff="coffee"
+                    android:background="@drawable/togglebutton_selector"
+                    android:textColor="@color/white"
+                    android:padding="2dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton_fastnetwork"
+                    android:layout_below="@id/toggleButton_studyaids"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:textOn="fast network"
+                    android:textOff="fast network"
+                    android:textColor="@color/white"
+                    android:background="@drawable/togglebutton_selector"
+                    android:padding="2dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="61dp"
+                    android:background="@drawable/roundedbutton"
+                    android:onClick="goToSearchActivity"
+                    android:text="Submit"
+                    android:textColor="@color/black"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

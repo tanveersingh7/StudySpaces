@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:background="@color/umn_maroon">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:background="@color/umn_gold">
+
+        <ImageView
+            android:id="@+id/studySpaceThumbnail"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/searchSpaceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card 1"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/studySpaceThumbnail"/>
+
+        <TextView
+            android:id="@+id/studySpaceDescription"
+            android:layout_width="wrap_content"
+            android:text="description"
+            android:layout_toRightOf="@id/studySpaceThumbnail"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchSpaceName"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

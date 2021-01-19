@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/umn_maroon</item>
+        <item name="android:navigationBarColor">@color/umn_maroon</item>
+    </style>import com.example.studyspaces.R;
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.Search" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:statusBarColor">@color/umn_maroon</item>
+        <item name="android:navigationBarColor">@color/umn_maroon</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.TextView">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/off_white</item>
+    </style>
+
+    <style name="AppTheme.RatingBar">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/umn_gold</item>
+    </style>
+
+</resources>

@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/umn_maroon"
+    tools:context=".space.page.MoreDetails"
+    >
+    <TextView
+        android:id="@+id/LocationDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Main location"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subAddressDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Sub address"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LocationDetails" />
+
+    <TextView
+        android:id="@+id/detailsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="5dp"
+        android:text="Details"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subAddressDetails"
+        ></TextView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="412dp"
+        android:layout_height="572dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="2dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="158dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detailsText"
+        >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/detailsTable"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:stretchColumns="1">
+
+            <TableRow
+
+                android:id="@+id/thirdRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+
+                    android:id="@+id/averageRatingTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/umn_gold"
+                    android:padding="10dip"
+                    android:text="Average Rating"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <TextView
+
+                    android:id="@+id/averageRatingValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dip"
+                    android:text="Text 3"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/fourthRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+
+                    android:id="@+id/occupancyTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/umn_gold"
+                    android:padding="10dip"
+                    android:text="Occupancy"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <TextView
+
+                    android:id="@+id/occupancyValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dip"
+                    android:text="Text 4"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/fifthRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+
+                    android:id="@+id/powerOutletTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/umn_gold"
+                    android:padding="10dip"
+                    android:text="Power Outlet"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <TextView
+
+                    android:id="@+id/powerOutletValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dip"
+                    android:text="Text 5"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/sixthRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+
+                    android:id="@+id/noiseLevelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/umn_gold"
+                    android:padding="10dip"
+                    android:text="Noise Level"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <TextView
+
+                    android:id="@+id/noiseLevelValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dip"
+                    android:text="Text 6"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/seventhRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+
+                    android:id="@+id/networkSpeedTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/umn_gold"
+                    android:padding="10dip"
+                    android:text="Network Speed"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <TextView
+
+                    android:id="@+id/networkSpeedValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dip"
+                    android:text="Text 7"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/eighthRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+
+                    android:id="@+id/lightLevelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/umn_gold"
+                    android:padding="10dip"
+                    android:text="Light Level"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <TextView
+
+                    android:id="@+id/lightLevelValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dip"
+                    android:text="Text 8"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/ninthRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+
+                    android:id="@+id/wifiTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/umn_gold"
+                    android:padding="10dip"
+                    android:text="Wi Fi"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <TextView
+
+                    android:id="@+id/wifiValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dip"
+                    android:text="Text 9"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/tenthRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+
+                    android:id="@+id/waterfountainTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/umn_gold"
+                    android:padding="10dip"
+                    android:text="Water Fountain Nearby"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <TextView
+
+                    android:id="@+id/waterfountainValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dip"
+                    android:text="Text 10"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/eleventhRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+
+                    android:id="@+id/restroomTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/umn_gold"
+                    android:padding="10dip"
+                    android:text="Restroom Nearby"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <TextView
+
+                    android:id="@+id/restroomValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dip"
+                    android:text="Text 11"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/twelfthRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+
+                    android:id="@+id/foodTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/umn_gold"
+                    android:padding="10dip"
+                    android:text="Food Availability"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <TextView
+
+                    android:id="@+id/foodValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dip"
+                    android:text="Text 12"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/thirteenthRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+
+                    android:id="@+id/coffeeshopTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/umn_gold"
+                    android:padding="10dip"
+                    android:text="Coffee Shop"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <TextView
+
+                    android:id="@+id/coffeeshopValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dip"
+                    android:text="Text 13"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/fourteenthRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+
+                    android:id="@+id/whiteboardTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/umn_gold"
+                    android:padding="10dip"
+                    android:text="White Board"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <TextView
+
+                    android:id="@+id/whiteboardValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dip"
+                    android:text="Text 14"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/fifteenthRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+
+                    android:id="@+id/bigscreenTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/umn_gold"
+                    android:padding="10dip"
+                    android:text="Display Screen"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <TextView
+
+                    android:id="@+id/bigscreenValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dip"
+                    android:text="Text 15"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+            </TableRow>
+
+
+        </TableLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

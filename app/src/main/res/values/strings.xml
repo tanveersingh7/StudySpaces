@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Study Spaces</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be greater than 5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <color name="umn_maroon">#7A0019</color>
+    <color name="umn_gold">#ffcc33</color>
+    <color name="white">#ffffff</color>
+    <color name="off_white">#D3D3D3</color>
+    <color name="black">#000000</color>
+    <color name="transparent_background">#34C5B4B4</color>
+    <string name="title_activity_login">Sign in</string>
+    <string name="username">Username</string>
+    <string name="userid">UserID</string>
+    <string name="actual_user_id">virdi004</string>
+    <string name="preference">Select preferences</string>
+    <string name="preference_maxallow">( maximum 5 preferences allowed )</string>
+    <string name="good_lighting_pref">Good lighting</string>
+
+    <string name="add_photo">Add Photo</string>
+    <string name="write_review">Write Review</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
